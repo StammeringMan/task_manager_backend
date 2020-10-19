@@ -64,7 +64,7 @@ const taskSchema = new mongoose.Schema({
                 type: String
             }
         },
-        createdOn : {
+        assignedOn : {
             type: Date   
         },
         status: {

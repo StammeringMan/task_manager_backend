@@ -11,19 +11,19 @@ export const createNewTask = async (task) => {
     console.log(task)
     let newTask = new TaskModel(task)
     newTask.name = task.name
-    newTask.createdBy = {
-        name: currentUser.name,
-        mobile: currentUser.mobile,
-        email: currentUser.email
-    }
-    newTask.statusHistory.unshift({
-        createdBy: {
-            name: currentUser.name,
-            mobile: currentUser.mobile,
-            email: currentUser.email
-        },
-        createdOn: new Date()
-    })
+    // newTask.createdBy = {
+    //     name: currentUser.name,
+    //     mobile: currentUser.mobile,
+    //     email: currentUser.email
+    // }
+    // newTask.statusHistory.unshift({
+    //     createdBy: {
+    //         name: currentUser.name,
+    //         mobile: currentUser.mobile,
+    //         email: currentUser.email
+    //     },
+    //     createdOn: new Date()
+    // })
     return await newTask.save();
 }
 

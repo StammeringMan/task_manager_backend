@@ -11,6 +11,7 @@
   "author": "Abhinav Alok",
   "license": "ISC",
   "dependencies": {
+    "@date-io/date-fns": "^2.10.6",
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
